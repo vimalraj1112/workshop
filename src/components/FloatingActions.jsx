@@ -74,7 +74,7 @@ export const FloatingActions = () => {
         animate={{ y: 0 }}
         className="fixed bottom-0 left-0 right-0 md:hidden bg-dark border-t border-white/10 z-40"
       >
-        <div className="flex gap-1 p-2">
+        <div className="flex gap-1 p-2 pb-[calc(0.5rem+env(safe-area-inset-bottom))]">
           {actions.map((action, index) => (
             <motion.button
               key={index}
@@ -90,7 +90,7 @@ export const FloatingActions = () => {
       </motion.div>
 
       {/* Mobile Bottom Padding */}
-      <div className="md:hidden h-20"></div>
+      <div className="md:hidden h-[calc(5rem+env(safe-area-inset-bottom))]"></div>
     </>
   );
 };

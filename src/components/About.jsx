@@ -30,11 +30,11 @@ export const About = () => {
 
   const Stat = ({ number }) => {
     const { ref, value } = useCountUp(language === 'en' ? number.numberEn : number.numberTa);
-    return <span ref={ref} className="text-accent text-2xl sm:text-3xl font-bold">{value}</span>;
+    return <span ref={ref} className="text-accent text-xl sm:text-2xl md:text-3xl font-bold">{value}</span>;
   };
 
   return (
-    <section id="about" className="py-20 px-4 sm:px-8 lg:px-16 bg-dark-secondary relative overflow-hidden">
+    <section id="about" className="py-16 sm:py-20 px-4 sm:px-8 lg:px-16 bg-dark-secondary relative overflow-hidden">
       <div className="absolute bottom-0 right-0 w-[30rem] h-[30rem] bg-accent/5 blur-[120px] pointer-events-none"></div>
       <div className="max-w-7xl mx-auto relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -46,7 +46,7 @@ export const About = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="gradient-border rounded-2xl overflow-hidden h-96 md:h-[500px] p-1.5">
+            <div className="gradient-border rounded-2xl overflow-hidden h-72 sm:h-96 md:h-[500px] p-1.5">
               <div className="relative rounded-xl overflow-hidden h-full">
                 <img
                   src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Motorcycle_Repair.jpg/960px-Motorcycle_Repair.jpg"
@@ -87,7 +87,7 @@ export const About = () => {
 
             <motion.h2
               variants={itemVariants}
-              className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight whitespace-pre-line"
+              className="text-balance text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight whitespace-pre-line"
             >
               {language === 'en' ? about.titleEn : about.titleTa}
             </motion.h2>
@@ -100,14 +100,14 @@ export const About = () => {
             </motion.p>
 
             {/* Stats */}
-            <motion.div variants={itemVariants} className="grid grid-cols-3 gap-4 sm:gap-6 mb-8">
+            <motion.div variants={itemVariants} className="grid grid-cols-3 gap-2 sm:gap-6 mb-8">
               {about.stats.map((stat, index) => (
                 <motion.div
                   key={index}
-                  className="card-glow border border-white/10 rounded-xl p-4 text-center bg-dark/50"
+                  className="card-glow border border-white/10 rounded-xl p-3 sm:p-4 text-center bg-dark/50"
                 >
                   <Stat number={stat} />
-                  <p className="text-gray-400 text-xs sm:text-sm mt-2">
+                  <p className="text-gray-400 text-[10px] sm:text-xs md:text-sm mt-2">
                     {language === 'en' ? stat.labelEn : stat.labelTa}
                   </p>
                 </motion.div>

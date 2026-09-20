@@ -17,7 +17,7 @@ export const FinalCTA = () => {
   };
 
   return (
-    <section className="relative py-20 px-4 sm:px-8 lg:px-16 overflow-hidden bg-dark">
+    <section className="relative py-16 sm:py-20 px-4 sm:px-8 lg:px-16 overflow-hidden bg-dark">
       {/* Background Image */}
       <motion.div
         className="absolute inset-0"
@@ -41,7 +41,7 @@ export const FinalCTA = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6"
+          className="text-balance text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6"
         >
           {language === 'en'
             ? 'READY TO GET YOUR BIKE BACK ON THE ROAD?'
@@ -69,14 +69,14 @@ export const FinalCTA = () => {
         >
           <button
             onClick={handleWhatsApp}
-            className="px-8 py-4 bg-accent text-dark font-bold text-lg rounded-full hover:bg-orange-600 transition-colors"
+            className="px-6 sm:px-8 py-3.5 sm:py-4 bg-accent text-dark font-bold text-base sm:text-lg rounded-full hover:bg-orange-600 transition-colors"
           >
             {language === 'en' ? 'BOOK A SERVICE' : 'சேவை பதிவு'}
           </button>
 
           <button
             onClick={handleCall}
-            className="px-8 py-4 border-2 border-accent text-accent font-bold text-lg rounded-full hover:bg-accent/10 transition-colors"
+            className="px-6 sm:px-8 py-3.5 sm:py-4 border-2 border-accent text-accent font-bold text-base sm:text-lg rounded-full hover:bg-accent/10 transition-colors"
           >
             {language === 'en' ? 'CALL US' : 'எங்களை அழைக்கவும்'}
           </button>

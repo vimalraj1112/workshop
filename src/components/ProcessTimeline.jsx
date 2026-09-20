@@ -27,7 +27,7 @@ export const ProcessTimeline = () => {
   };
 
   return (
-    <section className="py-20 px-4 sm:px-8 lg:px-16 bg-dark">
+    <section className="py-16 sm:py-20 px-4 sm:px-8 lg:px-16 bg-dark">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -35,9 +35,9 @@ export const ProcessTimeline = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mb-16 text-center"
+          className="mb-12 sm:mb-16 text-center"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
+          <h2 className="text-balance text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
             {language === 'en' ? 'HOW WE WORK' : 'நாம் எவ்வாறு வேலை செய்கிறோம்'}
           </h2>
         </motion.div>
@@ -64,7 +64,7 @@ export const ProcessTimeline = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-2xl font-bold text-white mb-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
                   {language === 'en' ? step.titleEn : step.titleTa}
                 </h3>
 

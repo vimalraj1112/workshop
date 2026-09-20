@@ -35,7 +35,7 @@ export const Packages = () => {
   };
 
   return (
-    <section className="py-20 px-4 sm:px-8 lg:px-16 bg-dark-secondary">
+    <section className="py-16 sm:py-20 px-4 sm:px-8 lg:px-16 bg-dark-secondary">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -43,9 +43,9 @@ export const Packages = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mb-16 text-center"
+          className="mb-12 sm:mb-16 text-center"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
+          <h2 className="text-balance text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
             {language === 'en' ? 'SERVICE PACKAGES' : 'சேவை தொகுப்புகள்'}
           </h2>
           <p className="text-gray-400 text-lg">
@@ -72,7 +72,7 @@ export const Packages = () => {
               className="group relative"
             >
               <motion.div
-                className={`p-8 rounded-lg border transition-all duration-300 h-full flex flex-col ${
+                className={`p-6 sm:p-8 rounded-lg border transition-all duration-300 h-full flex flex-col ${
                   hoveredPackage === pkg.id
                     ? 'bg-accent/10 border-accent shadow-lg shadow-accent/20'
                     : 'bg-dark border-white/10'
@@ -101,7 +101,7 @@ export const Packages = () => {
 
                 {/* Price */}
                 <div className="mb-8">
-                  <p className="text-3xl font-bold text-accent">
+                  <p className="text-2xl sm:text-3xl font-bold text-accent">
                     {language === 'en' ? pkg.priceEn : pkg.priceTa}
                   </p>
                 </div>

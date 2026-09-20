@@ -60,9 +60,9 @@ export const BikeBrands = () => {
               key={index}
               variants={itemVariants}
               whileHover={{ scale: 1.1 }}
-              className="p-4 border border-white/10 rounded-lg bg-dark-secondary hover:border-accent/50 hover:bg-dark-tertiary transition-all duration-300 flex items-center justify-center h-20 cursor-pointer group"
+              className="p-4 border border-white/10 rounded-lg bg-dark-secondary hover:border-accent/50 hover:bg-dark-tertiary transition-all duration-300 flex items-center justify-center h-16 sm:h-20 cursor-pointer group"
             >
-              <span className="text-sm font-semibold text-gray-400 group-hover:text-accent transition-colors text-center">
+              <span className="text-xs sm:text-sm font-semibold text-gray-400 group-hover:text-accent transition-colors text-center">
                 {brand}
               </span>
             </motion.div>

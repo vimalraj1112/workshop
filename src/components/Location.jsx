@@ -47,7 +47,7 @@ export const Location = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-8 lg:px-16 bg-dark">
+    <section id="contact" className="py-16 sm:py-20 px-4 sm:px-8 lg:px-16 bg-dark">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left - Contact Info */}
@@ -59,7 +59,7 @@ export const Location = () => {
           >
             <motion.h2
               variants={itemVariants}
-              className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-12"
+              className="text-balance text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-8 sm:mb-12"
             >
               {language === 'en' ? 'GET IN TOUCH' : 'தொடர்பு கொள்ளவும்'}
             </motion.h2>
@@ -163,7 +163,7 @@ export const Location = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="w-full h-96 md:h-[500px] rounded-lg overflow-hidden border border-white/10 bg-dark-secondary flex items-center justify-center relative">
+            <div className="w-full h-72 sm:h-96 md:h-[500px] rounded-lg overflow-hidden border border-white/10 bg-dark-secondary flex items-center justify-center relative">
               {/* Stylish Map Placeholder */}
               <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-dark-secondary to-dark-tertiary"></div>
 

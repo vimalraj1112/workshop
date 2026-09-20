@@ -60,7 +60,7 @@ export const Footer = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12"
+          className="grid grid-cols-1 md:grid-cols-4 gap-10 sm:gap-12 mb-12"
         >
           {/* Brand */}
           <motion.div variants={itemVariants}>

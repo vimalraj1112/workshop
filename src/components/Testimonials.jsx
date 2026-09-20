@@ -40,7 +40,7 @@ export const Testimonials = () => {
   const testimonial = businessConfig.testimonials[currentIndex];
 
   return (
-    <section id="reviews" className="py-20 px-4 sm:px-8 lg:px-16 bg-dark">
+    <section id="reviews" className="py-16 sm:py-20 px-4 sm:px-8 lg:px-16 bg-dark">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -50,7 +50,7 @@ export const Testimonials = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
+          <h2 className="text-balance text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
             {language === 'en' ? 'WHAT OUR CUSTOMERS SAY' : 'எங்கள் வாடிக்கையாளர்கள் என்ன சொல்கிறார்கள்'}
           </h2>
         </motion.div>
@@ -62,7 +62,7 @@ export const Testimonials = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.6 }}
-          className="bg-dark-secondary border border-white/10 rounded-lg p-8 md:p-12 mb-8"
+          className="bg-dark-secondary border border-white/10 rounded-lg p-6 sm:p-8 md:p-12 mb-8"
         >
           {/* Stars */}
           <div className="flex gap-1 mb-6">
@@ -76,12 +76,12 @@ export const Testimonials = () => {
           </div>
 
           {/* Review Text */}
-          <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed italic">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 leading-relaxed italic">
             "{language === 'en' ? testimonial.reviewEn : testimonial.reviewTa}"
           </p>
 
           {/* Customer Info */}
-          <div className="flex items-center justify-between border-t border-white/10 pt-6">
+          <div className="flex items-center justify-between flex-wrap gap-4 border-t border-white/10 pt-6">
             <div>
               <p className="text-white font-semibold">
                 {language === 'en' ? testimonial.nameEn : testimonial.nameTa}

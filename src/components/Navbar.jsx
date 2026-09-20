@@ -74,7 +74,7 @@ export const Navbar = () => {
               <span className="text-white font-bold text-lg tracking-wider group-hover:text-accent transition-colors">
                 NISHA
               </span>
-              <span className="text-xs text-accent tracking-widest group-hover:tracking-[0.2em] transition-all">
+              <span className="text-xs text-accent tracking-widest group-hover:tracking-[0.2em] transition-all max-[360px]:hidden">
                 TWO-WHEELER WORKSHOP
               </span>
             </a>
@@ -110,7 +110,7 @@ export const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center gap-4">
+          <div className="md:hidden flex items-center gap-2 sm:gap-4">
             <LanguageToggle language={language} changeLanguage={changeLanguage} />
 
             <motion.button

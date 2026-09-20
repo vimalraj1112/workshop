@@ -27,7 +27,7 @@ export const WhyChooseUs = () => {
   };
 
   return (
-    <section className="py-20 px-4 sm:px-8 lg:px-16 bg-dark-secondary">
+    <section className="py-16 sm:py-20 px-4 sm:px-8 lg:px-16 bg-dark-secondary">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <motion.div
@@ -35,9 +35,9 @@ export const WhyChooseUs = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
+          <h2 className="text-balance text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
             {language === 'en'
               ? 'YOUR BIKE DESERVES\nMORE THAN JUST\nA SERVICE.'
               : 'உங்கள் பைக் சாதாரண\nசேவையை விட\nபெரிய கவனம் பெறுகிறது.'}
@@ -58,10 +58,10 @@ export const WhyChooseUs = () => {
               variants={itemVariants}
               className="group"
             >
-              <div className="flex items-start gap-6">
+              <div className="flex items-start gap-4 sm:gap-6">
                 {/* Number */}
                 <div className="flex-shrink-0">
-                  <span className="text-5xl font-bold text-accent/30 group-hover:text-accent/50 transition-colors">
+                  <span className="text-4xl sm:text-5xl font-bold text-accent/30 group-hover:text-accent/50 transition-colors">
                     {benefit.number}
                   </span>
                 </div>

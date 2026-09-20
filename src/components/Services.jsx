@@ -31,7 +31,7 @@ export const Services = () => {
   };
 
   return (
-    <section id="services" className="py-20 px-4 sm:px-8 lg:px-16 bg-dark relative overflow-hidden">
+    <section id="services" className="py-16 sm:py-20 px-4 sm:px-8 lg:px-16 bg-dark relative overflow-hidden">
       {/* Ambient glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[40rem] h-40 bg-accent/10 blur-[120px] pointer-events-none"></div>
 
@@ -42,7 +42,7 @@ export const Services = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mb-16 text-center"
+          className="mb-12 sm:mb-16 text-center"
         >
           <motion.span
             initial={{ opacity: 0, scale: 0.8 }}
@@ -52,7 +52,7 @@ export const Services = () => {
           >
             {language === 'en' ? 'Our Services' : 'எங்கள் சேவைகள்'}
           </motion.span>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
+          <h2 className="text-balance text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
             {language === 'en' ? (
               <>
                 BUILD AROUND <span className="text-gradient-static font-bold">YOUR RIDE.</span>
@@ -88,7 +88,7 @@ export const Services = () => {
                 className="group relative card-glow"
               >
                 <div
-                  className={`h-full p-8 rounded-2xl transition-all duration-300 cursor-pointer relative overflow-hidden ${
+                  className={`h-full p-6 sm:p-8 rounded-2xl transition-all duration-300 cursor-pointer relative overflow-hidden ${
                     hovered
                       ? 'bg-gradient-to-br from-dark-secondary to-dark border border-accent/50'
                       : 'bg-dark-secondary/80 glass border border-white/10'

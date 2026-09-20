@@ -31,7 +31,7 @@ export const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative w-full h-[100dvh] overflow-hidden bg-dark">
+    <section id="home" className="relative w-full min-h-[100dvh] overflow-hidden bg-dark">
       {/* Background Image - Slow Ken Burns zoom */}
       <motion.div
         className="absolute inset-0"
@@ -52,7 +52,7 @@ export const Hero = () => {
       <div className="absolute bottom-1/4 -right-24 w-80 h-80 rounded-full bg-orange-500/15 blur-[100px] animate-float pointer-events-none" style={{ animationDelay: '1.5s' }}></div>
 
       {/* Content */}
-      <div className="relative h-full flex flex-col justify-center items-start px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto">
+      <div className="relative min-h-[100dvh] flex flex-col justify-center items-start px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto py-20 sm:py-24">
         {/* Label */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -71,7 +71,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-4 leading-tight max-w-xl"
+          className="text-balance text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-4 leading-tight max-w-xl"
         >
           {language === 'en' ? (
             <>

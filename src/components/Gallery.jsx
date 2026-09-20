@@ -55,7 +55,7 @@ export const Gallery = () => {
   };
 
   return (
-    <section id="gallery" className="py-20 px-4 sm:px-8 lg:px-16 bg-dark-secondary">
+    <section id="gallery" className="py-16 sm:py-20 px-4 sm:px-8 lg:px-16 bg-dark-secondary">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -65,7 +65,7 @@ export const Gallery = () => {
           viewport={{ once: true }}
           className="mb-12 text-center"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
+          <h2 className="text-balance text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
             {language === 'en' ? 'OUR WORK' : 'எங்கள் வேலை'}
           </h2>
           <p className="text-gray-400 text-lg">
@@ -87,7 +87,7 @@ export const Gallery = () => {
             <button
               key={category}
               onClick={() => setFilter(category)}
-              className={`px-6 py-2 rounded-full font-semibold text-sm transition-all ${
+              className={`px-4 sm:px-6 py-2 rounded-full font-semibold text-sm transition-all ${
                 filter === category
                   ? 'bg-accent text-dark'
                   : 'bg-dark-tertiary text-gray-400 hover:text-white border border-white/10'
@@ -104,14 +104,14 @@ export const Gallery = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+          className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4"
         >
           {filteredGallery.map((image, index) => (
             <motion.div
               key={image.id}
               variants={itemVariants}
               onClick={() => handleImageClick(index)}
-              className="group relative overflow-hidden rounded-lg cursor-pointer h-64 sm:h-72"
+              className="group relative overflow-hidden rounded-lg cursor-pointer h-44 sm:h-72"
             >
               {/* Image */}
               <motion.img

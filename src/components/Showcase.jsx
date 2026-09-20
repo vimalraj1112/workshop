@@ -33,7 +33,7 @@ export const Showcase = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6"
+            className="text-balance text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6"
           >
             {language === 'en'
               ? 'ENGINEERED FOR THE ROAD.\nMAINTAINED FOR THE JOURNEY.'
